@@ -1,217 +1,206 @@
-/* **************** */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /* HEADER */
 
-.header{
-    height: 72px;
-    width: auto;
-    left: 0px;
-    right: 0px;
-    background-color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    font-family: 'Roboto','sans-serif','arial';
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 46.88px;
-    position:fixed;
-    z-index:999;
+.header {
+  height: 72px;
+  width: auto;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  font-family: "Roboto", "sans-serif", "arial";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 46.88px;
+  position: fixed;
+  z-index: 999;
 }
 
-.fixed-header{
-    width: 100%;
-    position: fixed; 
-    top: 0;       
+.fixed-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
-
-
 
 /* CONTAINER */
 
-body{
-    background: #f1f1f1;
+body {
+  background: #f1f1f1;
 }
 
-h1{
-    
-    width: 322px;   
-    height: 38px;
-    top: 122px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
-    color: #000000;
-
+h1 {
+  width: 322px;
+  height: 38px;
+  top: 122px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
 }
 
-p{
-    
-    width: auto;
-    height: 57px;
-    left: 266px;
-    top: 183px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
+p {
+  width: auto;
+  height: 57px;
+  left: 266px;
+  top: 183px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
 }
 
-
-.github{
-    
-    float: right;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    background: #CE0033;
-    border-radius: 5px;
-    width: 193px;
-    height: 41px;
-    border: none;
-   
+.github a {
+  color: white;
+  text-decoration: none;
+  float: right;
+  margin-right: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  background: #ce0033;
+  border-radius: 5px;
+  width: 193px;
+  height: 41px;
+  border: none;
+  padding-top: 20px;
 }
 
-.github a{
-    color: white;
-    text-decoration: none;
+.github {
+  text-align: center;
+  padding-top: 20px;
 }
 
-.row{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 40px;
-    margin-top:100px;
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 40px;
+  margin-top: 100px;
 }
 
 /* REGLES */
 
-ul{
-    list-style-image: url("/images/bullet.png");
+ul {
+  list-style-image: url("/images/bullet.png");
 }
-
-
-
-
 
 /* ACCORDION */
 
-input{
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-  }
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
 
-  .accordion {
-    border-radius: 5px;
-    overflow: hidden;
-    margin-bottom: 50px;
-    box-shadow: 0px 3px 8px -4px #000000;
-    
-  }
-  .accordion-label {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-    background-color: #FFFFFF;
-    cursor: pointer;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    color: #000000;
-    border-radius: 10px;
-    box-shadow: 0px 4x 10px -2px #000000;
-  }
+.accordion {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.25);
+}
+.accordion-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgb(0, 0, 0);
+  border-radius: 10px 10px 0px 0px;
+}
 
-  .accordion-content {
-    max-height: 0;
-    padding: 0 1em;
-    background: #FFFFFF;;
-    transition: all 0.35s;
-  }
-  input:checked ~ .accordion-content {
-    max-height: 100vh;
-    padding: 1em;
-  }
+.accordion-content {
+  max-height: 0;
+  padding: 0 1em;
+  background: #ffffff;
+  transition: all 0.35s;
+}
+input:checked ~ .accordion-content {
+  max-height: 100vh;
+  padding: 1em;
+}
 
+code {
+  padding: 1em;
+  margin: auto;
+  margin-bottom: 20px;
+  background: #e4e4e4;
+  border: 1px solid #a2a2a2;
+  border-radius: 17px;
+}
 
-  code{
-    padding: 1em;
-    margin: auto;
-    margin-bottom: 20px;
-    background: #E4E4E4;
-    border: 1px solid #A2A2A2;
-    border-radius: 17px;
-} 
+/* RANDOM */
 
+#random button {
+  width: 193px;
+  height: 41px;
+  left: 641px;
+  top: 1143px;
+  color: white;
+  background: #ce0033;
+  border-radius: 5px;
+}
 
-  /* RANDOM */
-
-#random button{
-
-    width: 193px;
-    height: 41px;
-    left: 641px;
-    top: 1143px;
-    color:white;
-    background: #CE0033;
-    border-radius: 5px;
-
-  
-} 
-#random{
-    text-align: center;
+#random {
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 /*RESPONSIVE */
 
-@media only screen and (max-device-width : 480px){
-    *{
-        text-align: center;
-    }
+@media only screen and (max-width: 560px) {
+  * {
+    text-align: center;
+  }
 
-    .container{
-        font-size: 28px;
-    }
+  .container {
+    font-size: 0.7em;
+    padding: 10px;
+  }
 
-    h1{
-        font-size: 32px;
-        margin: auto;
-    }
-    .column{
-        display: list-item;     
-        list-style-type: none;
-    }
-    li{
-        font-size: 16px;
-    }
-    button {
-        margin: 2rem;
-    }
-    
-    .code{
-        font-size: auto;
-        line-height: 18px;
-        text-align: left;
-    }
+  h1 {
+    font-size: 32px;
+    margin: auto;
+  }
+  .column {
+    display: list-item;
+    list-style-type: none;
+  }
+  li {
+    font-size: 16px;
+  }
+  button {
+    margin: 2rem;
+  }
 
-    .row{
-        display: flow-root;
-        grid-template-rows: 1fr 1fr;
-        margin-bottom: 40px;
-        margin-top:100px;
-    }
+  .code {
+    line-height: 18px;
+    text-align: left;
+  }
 
-    .github{
-        float: none;
-    }
+  .row {
+    display: flow-root;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 40px;
+    margin-top: 100px;
+  }
+  .github {
+    display: flex;
+    justify-content: center;
+  }
 
+  .github a {
+    margin-right: 0px;
+  }
 }
